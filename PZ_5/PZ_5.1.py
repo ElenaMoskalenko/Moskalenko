@@ -1,7 +1,7 @@
+# Составить функцию, которая напечатает сорок любых символов.
+
 import random
-import string
-def forty_characters():
-    characters = string.ascii_letters + string.digits + string.punctuation
-    forty_characters = ''.join(random.choice(characters) for _ in range(40))
-    print(forty_characters)
-print('')
+def print_random_chars():
+    chars = [chr(random.randint(33, 126)) for _ in range(40)]
+    print(''.join(chars))
+print_random_chars()
