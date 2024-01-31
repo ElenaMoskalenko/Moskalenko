@@ -7,6 +7,7 @@ def triangle():
     h = float(input("Высота %s: " % figure))
     print("Площадь: %.2f" % (0.5 * a * h))
 figure = input("1-прямоугольник, 2-треугольник: ")
+
 if figure == '1':
     rectangle()
 elif figure == '2':
